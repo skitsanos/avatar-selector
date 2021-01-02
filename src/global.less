@@ -1,0 +1,264 @@
+@import "~antd/dist/antd.less";
+@import (css) url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans:300,400&display=swap');
+
+@font-family: 'IBM Plex Sans', sans-serif;
+@code-family: 'IBM Plex Mono', Menlo, Courier, monospace;
+@font-weight-light: 300;
+@font-weight-normal: 400;
+
+@color-red: crimson;
+@color-orange: #e1ac41;
+
+@margin-size: 1ch;
+
+@primary-color: #4169E1;
+@link-color: #333;
+
+@layout-header-background: #4169E1;
+//@layout-header-height: 48px;
+@form-item-margin-bottom: 0.6rem;
+
+@shadow-light-inset: inset 0px 0px 5px -3px rgba(0, 0, 0, 0.55);
+@shadow-light: 0px 0px 5px -3px rgba(0, 0, 0, 0.55);
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+html {
+  font-family: @font-family;
+}
+
+body {
+  background-color: #6a92c6;
+}
+
+h1, h2, h3 {
+  font-weight: @font-weight-light;
+}
+
+.silent {
+  color: lighten(@text-color, 30%) !important;
+}
+
+.item-disabled {
+  background-color: lighten(@color-orange, 40);
+  text-decoration-color: crimson !important;
+  text-decoration: line-through;
+  //text-decoration-style: wavy;
+}
+
+.red {
+  color: crimson;
+}
+
+.orange {
+  color: @color-orange;
+}
+
+.bg-orange {
+  background-color: @color-orange;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.ant-page-header-heading-sub-title {
+  margin-top: 0.2rem;
+}
+
+.ant-form-item-explain {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.debug {
+  background-color: rgba(102, 205, 170, 0.3) !important;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flex {
+  flex: 1;
+}
+
+.stretch {
+  align-items: stretch;
+}
+
+.text-xxl {
+  font-size: xx-large;
+}
+
+.pt {
+  padding-top: @margin-size !important;
+}
+
+.pb {
+  padding-bottom: @margin-size !important;
+}
+
+.p-xxl {
+  padding: @margin-size*3;
+}
+
+.pl-xxl {
+  padding-left: @margin-size*3;
+}
+
+.ml {
+  margin-left: @margin-size;
+}
+
+.mr {
+  margin-right: @margin-size;
+}
+
+.mt {
+  margin-top: @margin-size;
+}
+
+.mt-xxl {
+  margin-top: @margin-size*3;
+}
+
+.mb {
+  margin-bottom: @margin-size;
+}
+
+.mb-xxl {
+  margin-bottom: @margin-size*3;
+}
+
+.len-10chars {
+  min-width: 10ch;
+}
+
+.h-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.v-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.absolute-centered {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.justify-centered{
+  justify-content: center;
+}
+
+.h-separator {
+  background-color: @primary-1;
+  min-height: 1px;
+}
+
+.v-separator {
+  width: 2px;
+  margin-left: @margin-size;
+  margin-right: @margin-size;
+  background-color: @primary-1;
+  min-height: @margin-size;
+}
+
+.shadow {
+  box-shadow: @shadow-light;
+}
+
+.hoverable {
+  &:hover {
+    background-color: @primary-1;
+    box-shadow: @shadow-light;
+  }
+}
+
+.no-scroll{
+  overflow: hidden;
+}
+
+.scrollable {
+  overflow-y: auto;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.hero {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clickable {
+  cursor: pointer;
+
+  &:hover {
+    background-color: @primary-1;
+  }
+}
+
+.big-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .anticon {
+    flex:1;
+    font-size: 60px;
+    color: @primary-3;
+  }
+}
