@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.3.0",
-    "ahooks": "^2.9.1",
+    "ahooks": "^2.10.12",
     "antd": "^4.8.5",
     "crypto-js": "^4.0.0",
     "dayjs": "^1.9.7",
