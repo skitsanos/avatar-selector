@@ -17,7 +17,7 @@
     "@ant-design/icons": "^4.3.0",
     "ahooks": "^2.9.1",
     "antd": "^4.8.5",
-    "crypto-js": "^4.0.0",
+    "crypto-js": "^4.1.1",
     "dayjs": "^1.9.7",
     "is-mobile": "^2.2.2",
     "react": "^17.0.2",
