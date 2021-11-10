@@ -14,7 +14,7 @@
     "deploy": "netlify deploy --prod"
   },
   "dependencies": {
-    "@ant-design/icons": "^4.3.0",
+    "@ant-design/icons": "^4.7.0",
     "ahooks": "^2.9.1",
     "antd": "^4.8.5",
     "crypto-js": "^4.0.0",
