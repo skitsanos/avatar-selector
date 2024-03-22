@@ -1,20 +1,20 @@
 import AvatarSelector from '@/components/AvatarSelector';
 import SaveOutlined from '@ant-design/icons/lib/icons/SaveOutlined';
 import {Button, Card} from 'antd';
-import React, {useState} from 'react';
+import {useState} from 'react';
 
-const Page = props =>
+const Page = () =>
 {
     const [selectedAvatar, setSelectedAvatar] = useState(1);
 
     return <div className={'p-xxl'}>
         <Card actions={[
-            <Button icon={<SaveOutlined/>}
+            <Button key={'button-save'}
+                    icon={<SaveOutlined/>}
                     onClick={() =>
                     {
                         console.log(selectedAvatar);
-                    }}>Save</Button>
-        ]}
+                    }}>Save</Button>]}
               style={{
                   width: 'max-content'
               }}>
@@ -22,7 +22,14 @@ const Page = props =>
                 Select avatar by pressing arrows
             </div>
             <AvatarSelector className={'content-center'}
-                            size={{xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100}}
+                            size={{
+                                xs: 24,
+                                sm: 32,
+                                md: 40,
+                                lg: 64,
+                                xl: 80,
+                                xxl: 100
+                            }}
                             badge={15}
                             index={selectedAvatar}
                             onChange={setSelectedAvatar}
@@ -32,7 +39,14 @@ const Page = props =>
 
         <Card className={'mt'}>
             <div className={'h-box'}>
-                <AvatarSelector size={{xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 100}}
+                <AvatarSelector size={{
+                    xs: 24,
+                    sm: 32,
+                    md: 40,
+                    lg: 64,
+                    xl: 80,
+                    xxl: 100
+                }}
                                 mode={'view'}
                                 badge={13}
                                 index={selectedAvatar}/>

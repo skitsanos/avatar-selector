@@ -1,10 +1,10 @@
 import {ConfigProvider} from 'antd';
 import React from 'react';
+import {Outlet} from 'umi';
 
-export default props =>
+export default () =>
 {
-    const {children} = props;
     return <ConfigProvider locale={'en'}>
-        {children}
+        <Outlet/>
     </ConfigProvider>;
 };

@@ -1,10 +1,10 @@
-@import "~antd/dist/antd.less";
 @import (css) url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans:300,400&display=swap');
 
 @font-family: 'IBM Plex Sans', sans-serif;
 @code-family: 'IBM Plex Mono', Menlo, Courier, monospace;
 @font-weight-light: 300;
 @font-weight-normal: 400;
+@text-color: #333;
 
 @color-red: crimson;
 @color-orange: #e1ac41;
@@ -50,7 +50,6 @@ h1, h2, h3 {
   background-color: lighten(@color-orange, 40);
   text-decoration-color: crimson !important;
   text-decoration: line-through;
-  //text-decoration-style: wavy;
 }
 
 .red {
@@ -196,7 +195,7 @@ h1, h2, h3 {
 }
 
 .h-separator {
-  background-color: @primary-1;
+  background-color: @primary-color;
   min-height: 1px;
 }
 
@@ -204,7 +203,7 @@ h1, h2, h3 {
   width: 2px;
   margin-left: @margin-size;
   margin-right: @margin-size;
-  background-color: @primary-1;
+  background-color: @primary-color;
   min-height: @margin-size;
 }
 
@@ -214,7 +213,7 @@ h1, h2, h3 {
 
 .hoverable {
   &:hover {
-    background-color: @primary-1;
+    background-color: @primary-color;
     box-shadow: @shadow-light;
   }
 }
@@ -248,7 +247,7 @@ h1, h2, h3 {
   cursor: pointer;
 
   &:hover {
-    background-color: @primary-1;
+    background-color: @primary-color;
   }
 }
 
@@ -259,6 +258,6 @@ h1, h2, h3 {
   .anticon {
     flex:1;
     font-size: 60px;
-    color: @primary-3;
+    color: @primary-color;
   }
 }
