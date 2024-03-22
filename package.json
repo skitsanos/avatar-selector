@@ -18,13 +18,9 @@
     "@ant-design/icons": "^5.3.5",
     "ahooks": "^3.7.10",
     "antd": "^5.15.3",
-    "crypto-js": "^4.2.0",
-    "dayjs": "^1.11.10",
     "is-mobile": "^4.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "umi-request": "^1.4.0",
-    "uuid": "^9.0.1"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "chance": "^1.1.11",
